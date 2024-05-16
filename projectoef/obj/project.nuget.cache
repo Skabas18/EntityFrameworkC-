@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "Iq4EstFnD8vRHDMrBZ7KO6bPp5xbS4Ui8++Cc2/qk5FMCYx4OUhDah5jBNftIhm2ao1qQNOCV3gNYPEvd4v5kQ==",
   "success": true,
-  "projectFilePath": "D:\\Desarrollo\\Platzi\\EntityFramework\\projectoef\\projectoef.csproj",
+  "projectFilePath": "D:\\Desarrollo\\Platzi\\EntityFramework\\proyectoef\\proyectoef.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sebastian Cabal\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.5\\microsoft.entityframeworkcore.8.0.5.nupkg.sha512",
     "C:\\Users\\Sebastian Cabal\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.5\\microsoft.entityframeworkcore.abstractions.8.0.5.nupkg.sha512",
