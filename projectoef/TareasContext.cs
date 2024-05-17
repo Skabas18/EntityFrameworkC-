@@ -29,6 +29,7 @@ namespace proyectoef
                 tarea.Property(p => p.Descripcion);
                 tarea.Property(p => p.PrioridadTarea);
                 tarea.Property(p => p.FechaCreacion);
+                tarea.Ignore(p => p.Resumen);
             });
         }
     }
