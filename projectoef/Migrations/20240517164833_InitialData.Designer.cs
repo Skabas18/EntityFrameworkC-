@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using proyectoef;
@@ -11,9 +12,11 @@ using proyectoef;
 namespace proyectoef.Migrations
 {
     [DbContext(typeof(TareasContext))]
-    partial class TareasContextModelSnapshot : ModelSnapshot
+    [Migration("20240517164833_InitialData")]
+    partial class InitialData
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -71,9 +74,7 @@ namespace proyectoef.Migrations
                         .HasColumnType("text");
 
                     b.Property<DateTime>("FechaCreacion")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("timestamp without time zone")
-                        .HasDefaultValue(new DateTime(2024, 5, 17, 11, 57, 55, 308, DateTimeKind.Local).AddTicks(8499));
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("PrioridadTarea")
                         .HasColumnType("integer");
@@ -94,7 +95,7 @@ namespace proyectoef.Migrations
                         {
                             TareaId = new Guid("ee24c066-d0bb-4a47-8bdd-ff3b66512cea"),
                             CategoriaId = new Guid("ee24c066-d0bb-4a47-8bdd-ff3b6651ccea"),
-                            FechaCreacion = new DateTime(2024, 5, 17, 11, 57, 55, 308, DateTimeKind.Local).AddTicks(6662),
+                            FechaCreacion = new DateTime(2024, 5, 17, 11, 48, 32, 852, DateTimeKind.Local).AddTicks(2382),
                             PrioridadTarea = 1,
                             Titulo = "Revisar pago de servicios publicos"
                         },
@@ -102,7 +103,7 @@ namespace proyectoef.Migrations
                         {
                             TareaId = new Guid("ee24c066-d0bb-4a47-8bdd-ff3b66512c11"),
                             CategoriaId = new Guid("ee24c066-d0bb-4a47-8bdd-ff3b6651cc02"),
-                            FechaCreacion = new DateTime(2024, 5, 17, 11, 57, 55, 308, DateTimeKind.Local).AddTicks(6673),
+                            FechaCreacion = new DateTime(2024, 5, 17, 11, 48, 32, 852, DateTimeKind.Local).AddTicks(2396),
                             PrioridadTarea = 0,
                             Titulo = "Terminar de ver pelicula en Netflix"
                         });
